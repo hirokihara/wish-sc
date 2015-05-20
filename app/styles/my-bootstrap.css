@@ -1,11 +1,47 @@
 .sitename{
-    margin:15px 0 15px;
+    margin:0px 0 15px;
 }
 .sitename a{
     font-size: 1.6em;
     color: inherit;
 }
 
+/*参考：http://stackoverflow.com/questions/19073813/how-to-justify-navbar-nav-in-bootstrap-3*/
+@media ( min-width: 768px ) {
+    .navbar > .container {
+        text-align: center;
+    }
+    .navbar-header,.navbar-brand,.navbar .navbar-nav,.navbar .navbar-nav > li {
+        float: none;
+        display: inline-block;
+    }
+    .collapse.navbar-collapse {
+        width: auto;
+        clear: none;
+    }
+    .navbar-nav > li > a {
+        padding-top: 0px;
+        padding-bottom: 15px;
+    }
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333;
+  outline: 0;
+  background-color: transparent;
+}
+
+@media ( max-width: 550px ) {
+.sitename a{
+    font-size: 1em;
+}
+}
+body {
+overflow-y: scroll;
+}
+
+/*
 i{
     font-size: 1.3em;
     color: inherit;
@@ -48,3 +84,4 @@ i{
     border-right: 0;
     border-radius: 0 3px 3px 0;
 }
+*/

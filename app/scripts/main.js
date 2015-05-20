@@ -22,3 +22,16 @@ function AppController ($router) {
     {path: '/access',  component: 'access'}
     ]);
 }
+
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+
+$(document).on('click','.navbar-brand',function(e) {
+        // $('#top').css({'focus':'true'});
+        $('#top').focus();
+        console.log('hoooo');
+});
+

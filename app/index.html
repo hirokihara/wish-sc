@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="styles/my-bootstrap.css" />
     <!-- endbuild -->
   </head>
-  <body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -27,11 +26,11 @@
 
         <!-- Site Name -->
         <div class="sitename"><div class="container">
-          <a class="navbar-brand" href="#">
-            <span>
+          <a class="navbar-brand" ng-link="top">
+            <span class="log">
               <img src="images/wish.png" height="30" alt="Wish navbar">
             </span>
-            <span>
+            <span class="campany">
               株式会社Wishシステムコンサルティング
             </span>
           </a>
@@ -51,7 +50,7 @@
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a ng-link="top">TOP</a></li>
+              <li><a id="top" ng-link="top">TOP</a></li>
               <li><a ng-link="outline">会社概要</a></li>
               <li><a ng-link="work">事業内容</a></li>
               <li><a ng-link="product">製品情報</a></li>
